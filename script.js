@@ -5,7 +5,7 @@ const cameraIPs = [
     "http://camera-ip-address-3",  // Channel 3
     "http://camera-ip-address-4",  // Channel 4
     "http://camera-ip-address-5",  // Channel 5
-    "http://camera-ip-address-6"    // Channel 6
+    "http://192.168.1.6:"    // Channel 6
 ];
 
 // Example parking detection data (for demonstration purposes)
