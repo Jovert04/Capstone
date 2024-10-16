@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(CEAFA-3D.jpg);
+    background-size: cover; /* Ensures the image covers the whole body */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+
+h1 {
+    text-align: center;
+    background-color: #214b94;
+    color: white;
+    padding-left: 100%;
+    padding-right: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    opacity: 95%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 50px;
+}
+
+.left-panel {
+    background-color: #4c8efc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /* Make it full width */
+    border: black 2px solid;
+    margin-bottom: 20px; /* Add some space below the left panel */
+}
+
+h2, h3 {
+    color: white;
+    text-align: center;
+}
+
+.video-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: black 1.5px solid;
+}
+
+.channels {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.channel-btn {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border: black 1.5px solid;
+}
+
+.channel-btn:hover {
+    background-color: #e6e6e6;
+}
+
+.full-screen-btn {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border: black 1.5px solid;
+    margin-top: 10px; /* Space above the full screen button */
+}
+
+.parking-area {
+    background-color: #4c8efc;
+    border-radius: 10px;
+    width: 100%; /* Make it full width */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Space between columns */
+    border: black 2px solid;
+}
+
+.parking-column {
+    display: flex;
+    flex-direction: column; /* Stack parking slots vertically */
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: center; /* Center parking slots in the column */
+    margin: 10px; /* Margin around each column */
+}
+
+.parking-column-horizontal {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    justify-content: space-between; /* Space between horizontal rows */
+    margin: 10px; /* Margin around the horizontal column */
+}
+
+.parking-slot {
+    background-color: green; /* Default is green for free */
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+    width: 80%; /* Adjust width to fit within the column */
+    font-size: 25px; /* Increased font size for better visibility */
+    color: white;
+    margin: 10px 0; /* Add vertical spacing between slots */
+}
+
+/* Red for occupied slots */
+.occupied {
+    background-color: red;
+}

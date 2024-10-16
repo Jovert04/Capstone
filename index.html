@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SMART PARKING</h1>
+        <div class="content">
+            <div class="left-panel">
+                <h2>Live Video Parking</h2>
+                <div class="video-container">
+                    <iframe id="liveVideo" src="http://your-default-ip-address" frameborder="0" width="100%" height="500px"></iframe>
+                </div>
+                <h3 id="channelTitle">Channel No.1</h3>
+                <div class="channels">
+                    <button class="channel-btn" onclick="changeChannel(1)">Channel 1</button>
+                    <button class="channel-btn" onclick="changeChannel(2)">Channel 2</button>
+                    <button class="channel-btn" onclick="changeChannel(3)">Channel 3</button>
+                    <button class="channel-btn" onclick="changeChannel(4)">Channel 4</button>
+                    <button class="channel-btn" onclick="changeChannel(5)">Channel 5</button>
+                    <button class="channel-btn" onclick="changeChannel(6)">Channel 6</button>
+                </div>
+                <button class="full-screen-btn" onclick="toggleFullScreen()">Full Screen</button>
+                <p>Full screen before saving</p>
+            </div>
+            
+            <!-- Parking Area -->
+            <div class="parking-area">
+                <!-- 1st Column (Vertical) -->
+                <div class="parking-column">
+                    <div class="parking-slot" id="slot1">P</div>
+                    <div class="parking-slot" id="slot2">P</div>
+                    <div class="parking-slot" id="slot3">P</div>
+                    <div class="parking-slot" id="slot4">P</div>
+                    <div class="parking-slot" id="slot5">P</div>
+                </div>
+                
+                <!-- 2nd Column (Horizontal) -->
+                <div class="parking-column-horizontal">
+                    <div class="parking-slot" id="slot6">P</div>
+                    <div class="parking-slot" id="slot7">P</div>
+                    <div class="parking-slot" id="slot8">P</div>
+                </div>
+
+                <!-- 3rd Column (Vertical) -->
+                <div class="parking-column">
+                    <div class="parking-slot" id="slot9">P</div>
+                    <div class="parking-slot" id="slot10">P</div>
+                    <div class="parking-slot" id="slot11">P</div>
+                    <div class="parking-slot" id="slot12">P</div>
+                    <div class="parking-slot" id="slot13">P</div>
+                </div>
+                
+                <!-- 4th Column (Vertical) -->
+                <div class="parking-column">
+                    <div class="parking-slot" id="slot14">P</div>
+                    <div class="parking-slot" id="slot15">P</div>
+                    <div class="parking-slot" id="slot16">P</div>
+                    <div class="parking-slot" id="slot17">P</div>
+                    <div class="parking-slot" id="slot18">P</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
